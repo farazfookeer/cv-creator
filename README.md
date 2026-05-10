@@ -2,6 +2,10 @@
 
 A Claude Code skill that generates, reviews, and ATS-optimizes CVs/résumés across multiple regions and high-volume industries.
 
+![Three example CVs rendered by cv-creator: tech/US, nursing/UAE, and academic/UK](docs/preview.png)
+
+*Same skill, three regions × three industries. Markdown source → PDF + DOCX via pandoc. Examples in [`skills/cv-creator/examples/`](skills/cv-creator/examples/).*
+
 ## What it does
 
 Four modes, one entry point:
