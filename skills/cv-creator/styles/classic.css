@@ -5,6 +5,11 @@
 @page {
   size: Letter;
   margin: 0.75in;
+  background: #ffffff;
+}
+
+html, body {
+  background: #ffffff;
 }
 
 body {
