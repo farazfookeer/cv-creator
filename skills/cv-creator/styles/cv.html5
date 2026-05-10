@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="$lang$" xml:lang="$lang$">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="pandoc">
+$if(title-meta)$
+  <title>$title-meta$</title>
+$elseif(title)$
+  <title>$title$</title>
+$else$
+  <title>CV</title>
+$endif$
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+</head>
+<body>
+$if(title)$
+$endif$
+$body$
+</body>
+</html>

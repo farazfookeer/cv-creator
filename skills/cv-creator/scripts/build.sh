@@ -32,6 +32,7 @@ docx="$out_dir/$base.docx"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 skill_dir="$(dirname "$script_dir")"
 css="$skill_dir/styles/classic.css"
+html_template="$skill_dir/styles/cv.html5"
 
 if ! command -v pandoc >/dev/null 2>&1; then
   echo "Error: pandoc not installed. Run: bash $script_dir/check-deps.sh" >&2
@@ -65,7 +66,10 @@ done
 if [ $pdf_built -eq 0 ] && command -v weasyprint >/dev/null 2>&1; then
   echo "Building PDF (HTML→PDF via weasyprint) → $pdf"
   html_tmp="$out_dir/$base.html"
-  pandoc "$input" -o "$html_tmp" --standalone --css="$css"
+  pandoc "$input" -o "$html_tmp" \
+    --standalone \
+    --template="$html_template" \
+    --css="$css"
   weasyprint "$html_tmp" "$pdf"
   rm -f "$html_tmp"
   pdf_built=1
