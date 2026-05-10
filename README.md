@@ -87,6 +87,10 @@ PRs welcome. The most valuable contributions are:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide and [`skills/cv-creator/SKILL.md`](skills/cv-creator/SKILL.md) for the contracts each template must satisfy.
 
+## Privacy
+
+The skill runs entirely locally and transmits no data of its own. Claude's processing of your prompts is governed by [Anthropic's Privacy Policy](https://www.anthropic.com/privacy). See [PRIVACY.md](PRIVACY.md) for details.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
