@@ -1,0 +1,15 @@
+{
+  "name": "cv-creator-marketplace",
+  "description": "Open-source CV/résumé creator skill for Claude Code. Multi-region, multi-industry, with bullet-rewriting, review, and ATS-optimization modes.",
+  "owner": {
+    "name": "Faraz Fookeer"
+  },
+  "plugins": [
+    {
+      "name": "cv-creator",
+      "source": ".",
+      "version": "0.1.0",
+      "description": "Generate, review, and ATS-optimize CVs across regions and industries."
+    }
+  ]
+}

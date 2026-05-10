@@ -1,0 +1,15 @@
+{
+  "name": "cv-creator",
+  "version": "0.1.0",
+  "description": "Generate, review, and ATS-optimize CVs/résumés across multiple regions (US, UK/EU, Germany, UAE, Academic) and high-volume industries (tech, nursing, finance, sales, trades, creative, executive). Outputs Markdown, PDF, and DOCX via pandoc.",
+  "author": {
+    "name": "Faraz Fookeer"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/farazfookeer/cv-creator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/farazfookeer/cv-creator"
+  },
+  "keywords": ["cv", "resume", "résumé", "lebenslauf", "ats", "job-search", "career"]
+}

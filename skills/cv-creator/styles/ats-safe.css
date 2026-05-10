@@ -1,0 +1,65 @@
+/* ats-safe.css — minimal, single-column, safe-font CSS for ATS-screened
+   submissions. No tables, no decorative elements, parser-friendly text flow. */
+
+@page {
+  size: Letter;
+  margin: 0.75in;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  line-height: 1.35;
+  color: #000;
+  max-width: 7in;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 18pt;
+  margin: 0 0 4pt 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 12pt;
+  margin: 12pt 0 4pt 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 11pt;
+  margin: 8pt 0 2pt 0;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 11pt;
+  margin: 0 0 2pt 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 3pt 0;
+}
+
+ul {
+  margin: 2pt 0 6pt 0;
+  padding-left: 18pt;
+  list-style-type: disc;
+}
+
+li {
+  margin: 1pt 0;
+}
+
+/* Suppress decorative tables in ATS render — flatten visually, but parsers
+   should still read the underlying text. Authors should avoid tables in
+   ATS-targeted CVs. */
+table, thead, tbody, tr, td, th {
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
